@@ -35,12 +35,33 @@
     }
 }
 
+.pickupServiceImageContainer,
+.pickupImageContainer {
+    margin-top: 2rem;
+}
+
 .footer {
     padding: 1rem;
 }
 
 .header {
     padding: 0 1rem;
+}
+
+.screen1BottomSection {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    > * {
+        margin: 0 0.4rem;
+    }
+}
+
+.openAutoLogo {
+    display: none;
 }
 
 @media only screen and (min-width: $bp-md) {
@@ -58,5 +79,23 @@
 
     .header {
         padding: 0 4rem;
+    }
+
+    .screen1BottomSection {
+        justify-content: flex-end;
+
+        position: relative;
+    }
+
+    .openAutoLogo {
+        display: block;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+
+        filter: brightness(0) invert(1);
     }
 }

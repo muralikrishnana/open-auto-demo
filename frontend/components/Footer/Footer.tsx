@@ -1,5 +1,6 @@
 import { Divider, Image } from "@mantine/core";
-import { BrandFacebook, BrandInstagram, BrandLinkedin, BrandTwitter, BrandYoutube, Mail, Phone } from "tabler-icons-react";
+import { Mail, Phone } from "tabler-icons-react";
+import SocialLinks from "../SocialLinks/SocialLinks";
 import classes from "./Footer.module.scss";
 
 const Footer = () => {
@@ -36,11 +37,7 @@ const Footer = () => {
           <div>Cookie policy</div>
         </div>
         <div>
-          <BrandFacebook size={"1.2rem"} />
-          <BrandTwitter size={"1.2rem"} />
-          <BrandYoutube size={"1.2rem"} />
-          <BrandLinkedin size={"1.2rem"} />
-          <BrandInstagram size={"1.2rem"} />
+          <SocialLinks />
         </div>
       </div>
     </div>
