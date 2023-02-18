@@ -1,4 +1,6 @@
 import { AspectRatio, Button, Image } from "@mantine/core";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import Section from "../Section/Section";
 import SignUpForm from "../SignUpForm/SignUpForm";
 import classes from "./HomePage.module.scss";
@@ -8,7 +10,7 @@ const PICKUP_SERVICE_IMAGE_ASPECT = 2480 / 2390;
 
 const PickupServiceImage = () => {
   return (
-    <AspectRatio ratio={PICKUP_SERVICE_IMAGE_ASPECT} m={80}>
+    <AspectRatio ratio={PICKUP_SERVICE_IMAGE_ASPECT} className={classes.pickupServiceImageContainer}>
       <Image src={"/assets/images/pickup_service.png"} alt={"pickup being booked by customer"} />
     </AspectRatio>
   );
@@ -54,11 +56,17 @@ const PickupServiceContent = () => {
 const HomePage = () => {
   return (
     <div className={classes.root}>
+      <div className={`${classes.dark} ${classes.header}`}>
+        <Header />
+      </div>
       <div className={`${classes.dark} ${classes.content}`}>
         <Section leftSection={<PickupContent />} rightSection={<PickupImage />} leftSectionFlexGrow={3} rightSectionFlexGrow={4} />
       </div>
       <div className={`${classes.bright} ${classes.content}`}>
         <Section rightSection={<PickupServiceContent />} leftSection={<PickupServiceImage />} leftSectionFlexGrow={1} rightSectionFlexGrow={1} />
+      </div>
+      <div className={`${classes.bright} ${classes.footer}`}>
+        <Footer />
       </div>
     </div>
   );

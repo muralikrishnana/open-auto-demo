@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.root {
+    padding-top: 2rem;
+}
+
+.logoContainer {
+    width: 50%;
+}
+
+.contactInfo {
+    display: none !important;
+}
+
+@media only screen and (min-width: $bp-md) {
+    .root {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        > div {
+            display: flex !important;
+        }
+    }
+
+    .contactInfo {
+        > div > span {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            padding-right: 0.2rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    .logoContainer {
+        width: 20%;
+    }
+
+    .contactInfo {
+        display: flex;
+        width: 100%;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        div {
+            display: flex;
+
+            margin-left: 1rem;
+        }
+    }
+
+    .links {
+        justify-content: space-between;
+
+        > div:first-child {
+            justify-content: flex-start;
+        }
+
+        > div:last-child {
+            justify-content: flex-end;
+
+            * {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .privacyLinks {
+        display: none !important;
+    }
+}

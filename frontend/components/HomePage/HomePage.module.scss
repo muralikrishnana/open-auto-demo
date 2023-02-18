@@ -6,7 +6,7 @@
 }
 
 .content {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .bright {
@@ -32,5 +32,31 @@
 
     > * {
         margin-top: 2rem;
+    }
+}
+
+.footer {
+    padding: 1rem;
+}
+
+.header {
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: $bp-md) {
+    .content {
+        padding: 4rem;
+    }
+
+    .pickupServiceImageContainer {
+        margin: 5rem;
+    }
+
+    .footer {
+        padding: 2rem 4rem;
+    }
+
+    .header {
+        padding: 0 4rem;
     }
 }

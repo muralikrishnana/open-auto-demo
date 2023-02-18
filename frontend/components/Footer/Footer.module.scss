@@ -1,0 +1,118 @@
+@import "../../styles/variables.scss";
+
+.root {
+    font-size: 0.9rem;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    justify-content: space-between;
+
+    padding-bottom: 2rem;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+}
+
+.logoContainer {
+    width: 50%;
+}
+
+.contactInfo {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        display: flex;
+
+        margin-top: 1rem;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-end;
+
+        padding-right: 0.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+.links {
+    margin-top: 1.5rem;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+
+        align-items: center;
+
+        margin-top: 0.6rem;
+    }
+
+    > div:first-child {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: $bp-md) {
+    .root {
+        > div {
+            flex-direction: row;
+
+            justify-content: space-between;
+        }
+    }
+
+    .logoContainer {
+        width: 20%;
+    }
+
+    .contactInfo {
+        display: flex;
+        width: 100%;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        div {
+            display: flex;
+
+            margin-left: 1rem;
+        }
+    }
+
+    .links {
+        justify-content: space-between;
+
+        > div:first-child {
+            justify-content: flex-start;
+        }
+
+        > div:last-child {
+            justify-content: flex-end;
+
+            * {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .privacyLinks {
+        display: none !important;
+    }
+}

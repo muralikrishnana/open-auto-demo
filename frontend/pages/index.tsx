@@ -12,7 +12,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <MantineProvider theme={{ colorScheme: "dark" }}>
+        <MantineProvider
+          theme={{
+            colorScheme: "dark",
+            breakpoints: {
+              xs: 600,
+              sm: 768,
+              md: 992,
+              lg: 1200,
+              xl: 1400,
+            },
+          }}
+        >
           <HomePage />
         </MantineProvider>
       </main>
