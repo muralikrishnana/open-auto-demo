@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.root {
+    color: $foreground-text-dim;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 4rem;
+}
+
+.bright {
+    background-color: $background-bright;
+}
+
+.dark {
+    background-color: $background-dark;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.pickupContentContainer,
+.pickupServiceContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+
+    > * {
+        margin-top: 2rem;
+    }
+}
