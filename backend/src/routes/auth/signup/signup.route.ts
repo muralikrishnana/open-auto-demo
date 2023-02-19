@@ -5,7 +5,7 @@ const signUpRouter = express.Router();
 signUpRouter.post("/", async (req, res) => {
   const signupResponse = await signUpController(req.body);
 
-  res.status(signupResponse.statusCode).json(signupResponse);
+  res.status(200).json(signupResponse);
 });
 
 export default signUpRouter;

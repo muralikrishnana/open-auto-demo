@@ -1,5 +1,6 @@
 import HomePage from "@/components/HomePage/HomePage";
 import { MantineProvider } from "@mantine/core";
+import { NotificationsProvider } from "@mantine/notifications";
 import Head from "next/head";
 
 export default function Home() {
@@ -24,7 +25,9 @@ export default function Home() {
             },
           }}
         >
-          <HomePage />
+          <NotificationsProvider>
+            <HomePage />
+          </NotificationsProvider>
         </MantineProvider>
       </main>
     </>

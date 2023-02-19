@@ -1,3 +1,4 @@
+import cors from "cors";
 import express, { Request, Response } from "express";
 import { internalServerErrorReturn } from "./common/commonReturns";
 import { httpLogger, logger } from "./logger";
@@ -11,6 +12,10 @@ import rootRouter from "./routes/root.route";
 const PORT = process.env["PORT"] || process.env["EXPRESS_PORT"];
 
 const app = express();
+
+app.use(cors());
+
+app.use(cors());
 
 app.use(httpLogger);
 
