@@ -21,3 +21,7 @@
 - after dependencies are installed run `yarn dev` for running the app in development mode
 
 this application is create using nextjs [nextjs](https://nextjs.org/). for building or running apps in other modes may refer for the commands in their documentation.
+
+## Live Demo
+
+[demo](https://open-auto-demo.vercel.app/)
